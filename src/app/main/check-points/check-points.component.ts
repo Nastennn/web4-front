@@ -141,7 +141,6 @@ export class CheckPointsComponent implements OnInit, OnChanges {
 
   drawGraphic(r) {
     if (this.checkR(r)) {
-      console.log(`r = ${r}`);
       this.graphic.drawGraphic(r);
       this.getPointsRecalculated(r);
     } else {

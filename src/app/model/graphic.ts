@@ -33,7 +33,6 @@ export class Graphic {
   }
 
   drawGraphic(r) {
-    console.log('Drawing graphic with R=' + r);
     const context = this.canvas.nativeElement.getContext('2d');
     context.clearRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
     const size = 360;
