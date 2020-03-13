@@ -15,6 +15,11 @@ canvas {
   margin: 17% 0;
 }
 
+.ui-slider {
+  position: relative;
+  z-index: 0;
+}
+
 .desktop-canvas {
   float: right;
   margin-right: 10%;
@@ -50,4 +55,72 @@ form select {
 
 .form-group {
   margin-bottom: 0;
+}
+
+@media (max-width: 666px) {
+  form {
+    width: 80%;
+    margin: 30% 10% 0 10%;
+    text-align: center;
+  }
+
+  .ui-slider {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  canvas {
+    width: 80%;
+    margin: 10%;
+    padding: 10px;
+  }
+
+  form input[type=text], form select {
+    width: 80%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 999px) {
+  canvas {
+    width: 400px;
+    padding: 10px;
+    margin: 10%;
+  }
+
+  form {
+    width: 400px;
+    margin: 20% 10% 0 10%;
+    text-align: center;
+  }
+
+  form input[type=text], form select {
+    width: 80%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+  #backgroundDiv{
+    box-sizing: unset;
+  }
+}
+
+@media (min-width: 1000px){
+  form{
+    float: left;
+    margin-left: 10%;
+  }
+
+  canvas{
+    float: right;
+    margin-right: 10%;
+  }
+
+  #backgroundDiv{
+    box-sizing: border-box;
+  }
 }

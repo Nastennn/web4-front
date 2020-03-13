@@ -42,8 +42,15 @@ export class Graphic {
     r = r * i;
     const startX = size / 2;
     const startY = size / 2;
-    context.fillStyle = '#2f9aff';
+    context.fillStyle = '#aaa';
     context.beginPath();
+
+    context.fillRect(0, 0, 360, 360);
+    context.fillStyle = '#fff';
+    context.fillRect(startX - 90, startY - 150, 180, 300);
+
+    context.fillStyle = '#2f9aff';
+
 
     // Triangle
     context.moveTo(startX, startY);

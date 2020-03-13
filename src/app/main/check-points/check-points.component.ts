@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnChanges, OnInit, SimpleChanges, ViewChild, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, HostListener, OnChanges, OnInit, SimpleChanges, ViewChild, ViewEncapsulation} from '@angular/core';
 import {isNumeric} from 'rxjs/util/isNumeric';
 import {HttpErrorResponse} from '@angular/common/http';
 import {AuthService} from '../../services/auth/auth.service';
@@ -42,7 +42,12 @@ export class CheckPointsComponent implements OnInit, OnChanges {
     }
 
   }
+  @HostListener('window:resize', ['$event'])
+  sizeChange(event) {
+    const w = event.target.innerWidth;
+    console.log(`size changed. ${w}`, event);
 
+  }
   public getYValue() {
     return this.form.controls.yValue.value;
   }

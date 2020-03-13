@@ -120,6 +120,7 @@ nav li {
 
 #more-info {
   position: fixed;
+  z-index: 1;
   left: 0;
   width: 40%;
   height: 100%;

@@ -1,4 +1,4 @@
-<div class="{{isDesktopDisplay()?'':'flex-g-center'}}">
+<div class="{{isDesktopDisplay()?'':'flex-g-center'}}" id="backgroundDiv">
   <form id="formId" class="block  {{isDesktopDisplay()?'desktop-form':''}}" name="form-check"
         (ngSubmit)="addPoint()" novalidate [formGroup]="mainForm">
     <div class="alert alert-danger" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
